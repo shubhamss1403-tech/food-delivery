@@ -1,0 +1,61 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 10%; /* Left and right padding */
+}
+
+.explore-menu h1 {
+    color: #262626;
+    font-weight: 500;
+}
+
+.explore-menu-text {
+    max-width: 60%;
+    color: #808080;
+    text-align: center;
+}
+
+.explore-menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    overflow-x: scroll; /* Horizontal scrolling */
+    flex-wrap: nowrap; /* Forces everything into one row */
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-menu-list-item {
+    flex: 0 0 auto;
+
+} 
+  
+ .explore-menu-list-item .active {
+    border: 2px solid #FF6347; /* Highlight color */
+    padding: 2px; /* Optional: Add some padding for better appearance */
+ 
+ }
+
+
+
+.explore-menu-list-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.explore-menu-list-item p {
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+}
